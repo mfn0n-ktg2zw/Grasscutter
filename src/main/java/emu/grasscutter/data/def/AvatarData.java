@@ -145,7 +145,7 @@ public class AvatarData extends GenshinResource {
     	}
     }  
     
-	public void setBaseHp(float newhp){
+    public void setBaseHp(float newhp){
     	this.HpBase = newhp;
     }
     
@@ -157,7 +157,7 @@ public class AvatarData extends GenshinResource {
     	}
     }
 	
-	public void setBaseAttack(float newattack){
+    public void setBaseAttack(float newattack){
     	this.AttackBase = newattack;
     }
     
@@ -169,7 +169,7 @@ public class AvatarData extends GenshinResource {
     	}
     }
     
-	public void setBaseDefense(float newdefense){
+    public void setBaseDefense(float newdefense){
     	this.DefenseBase = newdefense;
     }
 	
@@ -177,7 +177,7 @@ public class AvatarData extends GenshinResource {
         return this.Critical;
     }
     
-	public void setBaseCritical(float newcrit){
+    public void setBaseCritical(float newcrit){
     	this.Critical = newcrit;
     }
 	
@@ -185,7 +185,7 @@ public class AvatarData extends GenshinResource {
         return this.CriticalHurt;
     }
     
-	public void setBaseCriticalHurt(float newcrithurt){
+    public void setBaseCriticalHurt(float newcrithurt){
     	this.CriticalHurt = newcrithurt;
     }
 	
