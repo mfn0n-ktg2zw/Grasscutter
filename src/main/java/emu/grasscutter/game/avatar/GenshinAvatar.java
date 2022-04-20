@@ -271,7 +271,23 @@ public class GenshinAvatar {
 	public void setCurrentHp(float currentHp) {
 		this.currentHp = currentHp;
 	}
-
+	
+    public void avatarSetBaseHp(float setHp) {
+    	this.data.setBaseHp(setHp);
+    }	
+    public void avatarSetBaseAtk(float setAtk) {
+    	this.data.setBaseAttack(setAtk);
+    }	
+    public void avatarSetBaseDef(float setDef) {
+    	this.data.setBaseDefense(setDef);
+    }	
+    public void avatarSetBaseCrit(float setCrit) {
+    	this.data.setBaseCritical(setCrit);
+    }
+    public void avatarSetBaseCritDmg(float setCritDmg) {
+    	this.data.setBaseCriticalHurt(setCritDmg);
+    }
+	
 	public Int2FloatOpenHashMap getFightProperties() {
 		return fightProp;
 	}
