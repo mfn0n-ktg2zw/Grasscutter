@@ -143,6 +143,10 @@ public class AvatarData extends GenshinResource {
     	} catch (Exception e) {
     		return this.HpBase;
     	}
+    }  
+    
+	public void setBaseHp(float newhp){
+    	this.HpBase = newhp;
     }
     
     public float getBaseAttack(int level){
@@ -151,6 +155,10 @@ public class AvatarData extends GenshinResource {
     	} catch (Exception e) {
     		return this.AttackBase;
     	}
+    }
+	
+	public void setBaseAttack(float newattack){
+    	this.AttackBase = newattack;
     }
     
     public float getBaseDefense(int level){
@@ -161,14 +169,26 @@ public class AvatarData extends GenshinResource {
     	}
     }
     
+	public void setBaseDefense(float newdefense){
+    	this.DefenseBase = newdefense;
+    }
+	
     public float getBaseCritical(){
         return this.Critical;
     }
     
+	public void setBaseCritical(float newcrit){
+    	this.Critical = newcrit;
+    }
+	
     public float getBaseCriticalHurt(){
         return this.CriticalHurt;
     }
     
+	public void setBaseCriticalHurt(float newcrithurt){
+    	this.CriticalHurt = newcrithurt;
+    }
+	
     public float getGrowthCurveById(int level, FightProperty prop) {
     	String growCurve = this.growthCurveMap.get(prop.getId());
     	if (growCurve == null) {
